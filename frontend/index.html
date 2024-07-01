@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <div class="container">
+    <div class="content first-content">
+      <div class="first-column">
+        <h2 class="title title-primary">Bem vindo de volta!</h2>
+        <p class="description description-primary">Para se manter conectado,</p>
+        <p class="description description-primary">Faça login com suas informações pessoais!</p>
+        <button id="signin" class="btn btn-primary">Entrar</button>
+      </div>
+      <div class="second-column">
+        <h2 class="title title-second">Crie uma conta</h2>
+        <p class="description description-second">ou use seu e-mail para cadastro:</p>
+        <form id="signup-form" class="form">
+          <label class="label-input" for="name">
+            <i class='bx bx-user-pin'></i>
+            <input type="text" id="name" placeholder="  Nome">
+          </label>
+
+          <label class="label-input" for="comorbidade">
+            <i class='bx bx-clinic'></i>
+            <input type="text" id="comorbidade" placeholder="  Comorbidade">
+          </label>
+          <label class="label-input" for="deficiencia">
+            <i class='bx bx-accessibility'></i>
+            <input type="text" id="deficiencia" placeholder="  Deficiência">
+          </label>
+          <label class="label-input" for="email">
+            <i class='bx bxl-gmail'></i>
+            <input type="email" id="email" placeholder="  Email">
+          </label>
+
+          <label class="label-input" for="password">
+            <i class='bx bx-lock-alt'></i>
+            <input type="password" id="password" placeholder="  Senha">
+          </label>
+
+          <button type="button" id="btn-submit" class="btn btn-second">Cadastrar</button>
+        </form>
+      </div>
+    </div>
+    <div class="content second-content">
+      <div class="first-column">
+        <h2 class="title title-primary">Olá, amigo!</h2>
+        <p class="description description-primary">Insira seus dados pessoais,</p>
+        <p class="description description-primary">e comece a jornada conosco!</p>
+        <button id="signup" class="btn btn-primary">Cadastrar</button>
+      </div>
+      <div class="second-column">
+        <h2 class="title title-second">Faça login</h2>
+        <p class="description description-second">ou use sua conta do email:</p>
+        <form id="login-form" class="form">
+          <label class="label-input" for="login-email">
+            <i class='bx bxl-gmail'></i>
+            <input type="email" id="login-email" placeholder="  Email">
+          </label>
+
+          <label class="label-input" for="login-password">
+            <i class='bx bx-lock-alt'></i>
+            <input type="password" id="login-password" placeholder="  Senha">
+          </label>
+
+          <a class="password" href="#">Esqueceu sua senha?</a>
+          <button type="button" id="btn-login" class="btn btn-second btn-link">Entrar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <table id="data-table" class="data-table">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Comorbidade</th>
+          <th>Deficiência</th>
+          <th>Email</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

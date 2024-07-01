@@ -1,0 +1,1572 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parte de Glendha</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+
+  <style>
+    /* Define uma borda verde ao redor do card e ajusta a margem */
+    .card {
+      border: 2px solid green;
+      margin: 10px;
+      padding: 10px;
+      background-color: #f9f9f9;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Centraliza o texto nos títulos e links dentro do card e aumenta o tamanho da fonte */
+    .card-title,
+    .card-body a {
+      text-align: center;
+      font-size: 1.2em;
+      color: green;
+    }
+
+    /* Adiciona margem vertical aos links dentro do card */
+    .card-body a {
+      display: block;
+      margin: 10px 0;
+      padding: 10px;
+      border: 1px solid green;
+      border-radius: 5px;
+      background-color: #e9ecef;
+      text-align: left;
+    }
+
+    /* Centraliza a imagem e define um tamanho máximo */
+    .card img {
+      margin: 0 auto;
+      display: block;
+      height: 15rem;
+      width: 10rem;
+    }
+
+    /* Estilo personalizado para o botão de voltar */
+    .btn-custom {
+      background-color: #6c757d;
+      color: white;
+      width: 120px;
+      border: none;
+      margin-top: 10px;
+    }
+
+    /* cabeçalho e rodapé */
+    .header,
+    .footer {
+      background-color: green;
+      text-align: center;
+      padding: 10px;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Estilo para o título do card */
+    .card h2 {
+      font-family: 'Georgia', serif;
+      font-size: 1.5em;
+      color: green;
+      margin-bottom: 10px;
+    }
+
+    /* Estilo para o subtítulo do card */
+    .card h5 {
+      font-family: 'Arial', sans-serif;
+      font-size: 1.3em;
+      color: #333;
+    }
+
+    /* Estilo para os links dentro do card */
+    .card-body a {
+      font-family: 'Verdana', sans-serif;
+      font-size: 1.1em;
+      color: green;
+    }
+
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+
+    .navbar input {
+      padding: 5px;
+      border-radius: 5px;
+      border: none;
+      margin-left: 10px;
+    }
+
+    .search-label {
+      color: white;
+      margin-right: 5px;
+    }
+
+    /* Fixando o rodapé na parte inferior da página */
+    .footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+
+    .footer p {
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Cabeçalho com barra de navegação e barra de pesquisa -->
+  <div class="container-fluid">
+    <a class="navbar-brand bg-body-secondary text-success mt-1 p-2 fs-4 border-top border-4 border-dark-subtle fst-italic"
+      href="telainicial.html"> Voltar ao Menu Principal </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="header">
+      <img src="img/logo.jpg" style="width: 40px; height: 40px; border-radius: 50%;">
+      <h1 style="color: white; display: inline-block; margin-left: 10px;">Comparação de Preço</h1>
+    </div>
+
+    <!-- Cards com informações do medicamento -->
+    <div class="container-fluid">
+      <div id="products-row" class="row">
+        <!-- <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title">Dor de Cabeça</h2>
+            <img src="img/novalgina...png" class=imagemblock alt="Imagem de novagina">
+            <h5 class="card-title">Novalgina 1g</h5>
+            <div class="card-body">
+              <a
+                href="https://www.ultrafarma.com.br/novalgina-1g-20-comprimidos?srsltid=AfmBOopW8qS0PW2808sg5-2nJabNwjlXvTdRYfUzcW-vczZjHlwJiG47YA4">Ultrafarma
+                R$38,28</a>
+              <a
+                href="https://www.paguemenos.com.br/novalgina-dipirona-sodica-1g-com-10-comprimidos/p?idsku=29181&utm_source=google&utm_medium=cpc&utm_campaign=PM_Perf_Google_PMAX_Mundo-Infantil_Misto_None_AON_fundo_IHPM&gclid=EAIaIQobChMIo6S0l9mmhgMVwFVIAB2iCQHGEAQYAiABEgJbm_D_BwE">Pague
+                Menos
+                R$20,85</a>
+              <a
+                href="https://www.araujo.com.br/analgesico-novalgina-1g-10-comprimidos/52148.html?gclid=EAIaIQobChMIo6S0l9mmhgMVwFVIAB2iCQHGEAQYASABEgLSsPD_BwE">Drogaria
+                Araujo R$23,00</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title">Dor de Cabeça</h2>
+            <img src="img/dipirona...webp" class=imagemblock alt="Imagem de dipirona ">
+            <h5 class="card-title">Dipirona 500mg</h5>
+            <div class="card-body">
+              <a
+                href="https://www.ultrafarma.com.br/dipirona-500mg-10-comprimidos-ems-generico?srsltid=AfmBOoqWc22nbx_khRdIAJ0RaK4yDW7jhyEVLc_UZAn3vUGB6zvlQ9piJDM">Ultrafarma
+                R$2,98</a>
+              <a
+                href="https://www.paguemenos.com.br/dipirona-500mg-envelope-com-10-comprimidos-generico-ems/p?idsku=18537&utm_source=google&utm_medium=cpc&utm_campaign=PM_Perf_Google_PMAX_Mundo-Infantil_Misto_None_AON_fundo_IHPM&gclid=EAIaIQobChMIkaaO0NemhgMVXUVIAB3tJgMrEAQYAiABEgL3P_D_BwE">
+                Pague Menos R$4,82</a>
+              <a
+                href="https://www.drogariaspacheco.com.br/dipirona-sodica-500mg-generico-ems-10-comprimidos/p?idsku=67563&gad_source=4&gclid=EAIaIQobChMI6LW8vNemhgMV90RIAB2BAA4kEAQYASABEgIMAfD_BwE">Drogarias
+                Pacheco R$4,19</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title">Dor de Cabeça</h2>
+            <img src="img/ibuprofeno.png" class=imagemblock alt="Imagem de ibuprofeno"">
+          <h5 class=" card-title">Ibuprofeno 600mg</h5>
+            <div class="card-body">
+              <a href="https://www.drogal.com.br/ibuprofeno-600mg-20cp-g-prat/p?idsku=11107">Drogal R$8,49</a>
+              <a
+                href="https://www.drogalider.com.br/ibupril-comprimido-600mg-caixa-com-20-comprimidos/p?srsltid=AfmBOorRKNL7AOx9ha0sHF_5STLYRqs3vP_3FwXUf8TNObzOotkY-F1gVVA">Drogralider
+                R$10,19</a>
+              <a
+                href="https://www.farmaponte.com.br/ibuprofeno-prati-donaduzzi-600mg-caixa-com-20-comprimidos-revestidos/p?srsltid=AfmBOoq6PueB1D22GGh8nyA0jJD8RiEbyZMCiBB3fuPO0xxfy6NDhSuk0cg">Farma
+                Ponte R$18,05</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title">Pressão Alta</h2>
+            <img src="img/cloridrato de verapamil.png" class=imagemblock alt="Imagem de verapamil"">
+          <h5 class=" card-title"> Cloridrato de verapamil</h5>
+            <div class="card-body">
+              <a
+                href="https://www.farmaciasnissei.com.br/cloridrato-de-verapamil-ems-80mg-com-30-comprimidos?srsltid=AfmBOorP7KQ0Tmgl-4_R-9VqecWG68QRNBDXIo1LKBoO5f9TA0Mp8PFx4rA">
+                Nissei R$24,90</a>
+              <a
+                href="https://www.paguemenos.com.br/gen-cl-verapamil-80mg-30caps-germed/p?idsku=111208&srsltid=AfmBOoqTG1EpjGfOINz5vd2KsegUWClCHR1kGleSeIV0ofTj8HRRjpY8uAw">Pague
+                Menos R$32,69</a>
+              <a
+                href="https://www.araujo.com.br/verapamil-80mg-ems-generico-com-30-comprimidos/45336.html?srsltid=AfmBOoqJlvVyi4oHou0ivm1lmLBAZg8V2rdFPYXIFhljW0vNGXabEsrYoLY">Drogaria
+                Araujo R$13,99</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title"> Pressão Alta </h2>
+            <img src="img/captopril 25mg.png" class=imagemblock alt="Imagem de captopril"">
+          <h5 class=" card-title"> Captopril 25mg</h5>
+            <div class="card-body">
+              <a
+                href="https://www.farmaciasnissei.com.br/captopril-ems-25mg-com-30-comprimidos?srsltid=AfmBOorfAl_t8LxBbl-o1FGpj7WEWiq8lVTrznUnnz3nXmhHAhmY-86Yle0">Nissei
+                R$5,90</a>
+              <a
+                href="https://www.farma22.com.br/captopril-25mg-30-comprimidos-cimed/p?idsku=480568035&srsltid=AfmBOorcWdJ8xZK7spDkL_tZwdT8kRnnviWgIMtfu-zbPbhMRr7cjCla7wA">
+                Farma22 R$3,19</a>
+              <a
+                href="https://www.drogaven.com.br/captopril-cimed-25mg-30-comprimidos/p?srsltid=AfmBOorOLI9huRCVXF-f5Ha2VKbKJYUFrNETBOUVUwN1EZIG1YtRXuRXhMk">DrogaVen
+                R$3,59</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title"> Pressão Alta </h2>
+            <img src="img/atenolol 50mg.png" class=imagemblock alt="Imagem de Atenolol 50mg"">
+          <h5 class=" card-title"> Atenolol 50mg</h5>
+            <div class="card-body">
+              <a
+                href="https://pill.com.br/products/atenolol-ems?variant=42908000059599&srsltid=AfmBOooFWYxcWrVY_ClBHi1B-ZYDnrMIbBWjuk4_7SHzbJBSEBjIOdl84yo&selling_plan=">Pill
+                R$5,59</a>
+              <a
+                href="https://www.farmaciasnissei.com.br/atenolol-ems-50mg-com-30-comprimidos?srsltid=AfmBOoowhOVfroDdGjVLvwqpUmOO14cbE27-s5cvjG8qhURI1cCDo6luHNE">
+                Nissei R$13,90</a>
+              <a
+                href="https://www.farma22.com.br/atenolol-50mg-30-comprimidos/p?idsku=480564612&srsltid=AfmBOopwO9BnnCrzTsymiBCzRQjkh3ccY2vYK08oJs4g4Sxh2NR6ONosSWo">Farma22
+                R$5,58</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title"> Pressão Alta </h2>
+            <img src="img/atenolol 100mg.png" class=imagemblock alt="Imagem de Atenolol 100mg"">
+          <h5 class=" card-title"> Atenolol 100mg </h5>
+            <div class="card-body">
+              <a
+                href="https://www.qualidoc.com.br/atenolol-100mg-30-comprimidos-biolab-gen%C3%A9rico/product/1261916?srsltid=AfmBOoo23IHhNu6zo-xRt14e9c6H3B_zHo2BcCZBwHiqAgJZClQi_5Mde70">
+                Qualidoc R$5,90</a>
+              <a href="https://www.drogarianovaesperanca.com.br/atenolol-100mg-com-30-comprimidos-36069/">
+                Nova Esperança R$5,68</a>
+              <a
+                href="https://www.drogariaveracruz.com.br/atenolol-100mg-biolab-30-comprimidos/p?srsltid=AfmBOooW1OdY3CcTzwW03g3vTB0b0NBaJlr9qzSaqXhs_kqCphp1igtJfwo"></a>
+            </div>Drogaria Vera Cruz R$12,10
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title"> Pressão Baixa </h2>
+            <img src="img/asea 40mg.jpg" class=imagemblock alt="Imagem de Asea 40mg"">
+          <h5 class=" card-title"> Asea 40mg </h5>
+            <div class="card-body">
+              <a
+                href="https://www.farmaciasnissei.com.br/asea-40mg-30-comprimidos?srsltid=AfmBOorGpaB-2Y98rUbZckg4YVkLEYD7DL8wmhuL6SV5Tp8hHgm0tDDie6I">Nissei
+                R$44,85 </a>
+              <a
+                href="https://www.paguemenos.com.br/asea-40mg-com-30-comprimidos/p?idsku=57948&srsltid=AfmBOor2V2lLIalQV6v-Zl8tHorRa-Rev1ZBOWDeMcfGAdtX0OY4XAJ0V-c">
+                Pague Menos R$40,79</a>
+              <a
+                href="https://www.araujo.com.br/asea-40mg-com-30-comprimidos-revestidos/3965.html?srsltid=AfmBOoouaNTgkJ2mTCv1TnzneWExxp33WKtgm9rt7BkIg3CuxCZs8hP4NMs">
+                Drogarias Araujo R$45,99</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title"> Pressão Baixa </h2>
+            <img src="img/Asea 20mg.webp" class=imagemblock alt="Imagem de Asea 20mg"">
+          <h5 class=" card-title"> Asea 20mg</h5>
+            <div class="card-body">
+              <a href="">Nissei
+                R$5,90</a>
+              <a href="">
+                Farma22 R$3,19</a>
+              <a href="">DrogaVen
+                R$3,59</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title"> Pressão Baixa </h2>
+            <img src="img/atacand 8mg.png" class=imagemblock alt="Imagem de Atacand 8mg"">
+          <h5 class=" card-title"> Atacand 8mg </h5>
+            <div class="card-body">
+              <a href="https://www.drogal.com.br/atacand-8mg-30-cpr/p?idsku=7903"> Drogral R$136,09</a>
+              <a
+                href="https://www.saojoaofarmacias.com.br/atacand-8mg-30-capsulas-astrazeneca-7026/p?idsku=4753&srsltid=AfmBOoqDfYrvECUoUCaCRbaM8Y6d1DKr5eQqhefxZq5exdcgwsy2tg623As">
+                São João R$137,69</a>
+              <a href="https://www.drogarianovaesperanca.com.br/atacand-8mg-com-30-comprimidos-1370/">Nova Esperança
+                R$137,77</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title"> Pressão Baixa </h2>
+            <img src="img/atacand 16mg.webp" class=imagemblock alt="Imagem de Atacand 16Mg"">
+          <h5 class=" card-title"> Atacand 16Mg </h5>
+            <div class="card-body">
+              <a href="https://www.drogal.com.br/atacand-16mg-30-cpr/p?idsku=304"> Drogal R$R$136,99</a>
+              <a
+                href="https://www.farmaciasunipreco.com.br/atacand-16mg-com-30-comprimidos-p46427?utm_source=google&utm_medium=merchants&srsltid=AfmBOopDgX_RKi39dmaNGnxBEVY-MH2xNZy8PftO-Qz3C-TX1vOgREOAtnA">
+                Unipreço R$134,29</a>
+              <a
+                href="https://www.araujo.com.br/atacand-16mg-com-30-comprimidos/12916.html?srsltid=AfmBOoo5uAGK4W-sSuqqz1xXmcA72CvGb8ftc-7rHrZPQouvZx3wusRpXLE">
+                Drogaria Araujo R$ 173,21</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title"> Anemia </h2>
+            <img src="img/sulfato ferroso.png" class=imagemblock alt="Imagem de sulfato ferroso"">
+          <h5 class=" card-title"> Sulfato Ferroso 500mg </h5>
+            <div class="card-body">
+              <a
+                href="https://www.drogaraia.com.br/sulfato-ferroso-270mg-c-60-comprimidos-arte-nativa-939435.html?srsltid=AfmBOorWm_sQmo5vM2u7GBSBzeLkNNKTtN40uJYaCxxDUAWFUUNe0AHWwik">
+                Droga Raia R$14,90</a>
+              <a
+                href="https://www.americanas.com.br/produto/4859557741/vitamina-de-ferro-500mg-60-capsulas?opn=YSMESP&offerId=6242efcb87c00289c23700cc&srsltid=AfmBOop85e3S0s3Ox6IoArGsRTQHnYtG6lpsyc0Qqpi_J31I_uEAtAyFhXA">
+                Americanas R$11,69</a>
+              <a href="https://www.equilibravida.com.br/sulfato-ferroso-arte-nativa-60cp/p"> Equilibra Vida R$5,37</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title"> Anemia </h2>
+            <img src="img/combiron.webp" class=imagemblock alt="Imagem de Combiron Gotas 30ml "">
+          <h5 class=" card-title"> Combiron Gotas 30ml </h5>
+            <div class="card-body">
+              <a
+                href="https://www.paguemenos.com.br/combiron-suspensao-oral-30ml-gotas/p?idsku=10347&srsltid=AfmBOorFwwpXMuJKsreqPLVwG5Y9DYIXN0zxXicyyk_n2nwPz3ugAZ2WjsY">Pague
+                Menos
+                R$25,79</a>
+              <a
+                href="https://www.drogariarosario.com.br/combiron-solucao-oral-gotas-30ml/p?idsku=4884&utm_source=googleshopping&srsltid=AfmBOoqFel3kKzU8wIx_o1K8zwmm-zVZQeV8XSEjnCpPP_vp5AMOzVDcpRk">
+                Drogaria Rosario R$25,15</a>
+              <a
+                href="https://www.farmaciaindiana.com.br/combiron-gotas-30ml/p?idsku=11998&srsltid=AfmBOoqLTZbElufvNRMpcqGSqTOpH6MfJXyNmPE1MVw8EFaqHVWovOMknMU">Drogaria
+                Indiana
+                R$25,91</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title"> Anemia </h2>
+            <img src="img/Endofer 100mg.jpeg" class=imagemblock alt="Imagem de Endofer 100mg "">
+          <h5 class=" card-title"> Endofer 100mg </h5>
+            <div class="card-body">
+              <a
+                href="https://www.farmaciasnissei.com.br/endofer-30-comprimidos-mastigaveis-100mg?srsltid=AfmBOortDi-i2E-y9PAhggUiPGNCHItPKObGREN4iYjCIJsQAJdUVNgjTLc">Nissei
+                R$50,09</a>
+              <a
+                href="https://www.drogasil.com.br/endofer-100mg-30-comprimidos.html?srsltid=AfmBOoqCrqWqQ5QmsWS6fGIk24D48skjvbOB8_3DtKe6bH-EWb4nU84wtNE">
+                Drogasil R$50,19</a>
+              <a
+                href="https://www.precopopular.com.br/endofer-com-30-comprimidos-mastigaveis-100mg/p?idsku=17495&srsltid=AfmBOoq8CWz23pmsgwP9XerDQxIq0hYD-kplE4HnP6QLNXMn3S-0hQTg7MA">
+                Preço Popular R$50,59</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title"> Anemia </h2>
+            <img src="img/acido folico.webp" class=imagemblock alt="Imagem de acido folico"">
+          <h5 class=" card-title"> Ácido Fólico 5Mg </h5>
+            <div class="card-body">
+              <a
+                href="https://www.farma22.com.br/afopic-5mg-20-comprimidos/p?idsku=480566416&srsltid=AfmBOoozS3irsdte99tPOoO9AGgAKzV3Uqk80nJA05wC7mqqPSsSs_Jq5xo">Farma22
+                R$5,22</a>
+              <a
+                href="https://www.saojoaofarmacias.com.br/acido-folico-5mg-c--20-comprimidos-afopic-teuto-79728/p?idsku=4697&srsltid=AfmBOoqbdYwcNHXZxP-C-WaNl0_9YE4wDl073AdtQSXTGf0_UG8I309pBIk">
+                São João R$12,64</a>
+              <a
+                href="https://www.coopdrogaria.com.br/afopic-acido-folico-teuto-5mg--com-20-comprimidos/p?idsku=5908&srsltid=AfmBOoqQdQHCI-QXJUWTiExHLWObl8af9XJ7M_zPXzvDUWokNR3YeoqQDf0">
+                Coop Drogaria
+                R$9,02</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title"> Diabete 1 </h2>
+            <img src="img/Insulina Novolin.png" class=imagemblock alt="Imagem de isulina Novolin"">
+          <h5 class=" card-title"> Insulina Novolin 100ui/ml </h5>
+            <div class="card-body">
+              <a href="https://www.drogaraia.com.br/novolin-insulina-humana-regular-100ui-10ml-frasco-ampola.html">
+                Droga
+                Raia
+                R$53,</a>
+              <a href="https://www.santaluciadrogarias.com.br/ins-novolin-r-u-100-10ml--p----pbm/p"> Santa Luzia
+                R$61,24</a>
+              <a
+                href="https://www.paguemenos.com.br/insulina-novolin-penfil-com-5-refis-com-3ml/p?idsku=13283&srsltid=AfmBOoqjNgSOhk11FJB65AlRLSA1-7kO01-MBSG4XOlHp5QdPomkpWl3478">
+                Pague Menos
+                R$99,49</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title"> Diabete 1 </h2>
+            <img src="img/Insulina Humalog.png" class=imagemblock alt="Imagem de Insulina Humalog"">
+          <h5 class=" card-title"> Insulina Humalog </h5>
+            <div class="card-body">
+              <a
+                href="https://www.farmaciaindiana.com.br/insul-humalog-lispro-u100-10ml/p?idsku=14104&srsltid=AfmBOoowgyt41rg3f_PCabcMMqwO4Ak41Zx3taWAjOGYK2t7Tji9P1AG7eo">
+                Indiana R$135,21 </a>
+              <a
+                href="https://www.paguemenos.com.br/insulina-humalog-10ml/p?idsku=8287&srsltid=AfmBOop1Af1g5qrzdGkXsvEpAdL57wtiAmkjjCzwWPSOxXy50Sxfd6uVSg8">
+                Pague R$142,99</a>
+              <a href="https://www.drogariasaopaulo.com.br/insulina-humalog-frasco-ampola-eli-lilly-1-unidade-10ml/p">
+                Drogaria São Paulo R$142,99</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title"> Diabete 1 </h2>
+            <img src="img/Insulina Insulina Lantus.png" class=imagemblock alt="Imagem de Insulina Lantus"">
+          <h5 class=" card-title"> Insulina Lantus </h5>
+            <div class="card-body">
+              <a href="https://www.drogaraia.com.br/lantus-solostar-1-refil-3ml.html"> Droga Raia
+                R$92,26</a>
+              <a
+                href="https://www.farmaciaindiana.com.br/lantus-inj-1carpx3ml/p?idsku=11722&srsltid=AfmBOorztslD-eBfkoYD__wPdxq-AFDJd2nNTfgeNWYTjneqK5jLR1lD9Ck">
+                Indiana R$98,11
+              </a>
+              <a
+                href="https://www.qualidoc.com.br/insulina-lantus-1-refil-de-3ml-para-caneta/product/1001396?srsltid=AfmBOorBPAhZR8kGTj7vtCekNI-WxdrtzzOV-0Da3KLwiWk9uEHC6kkDwq8">
+                Qualidoc R$83,190</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title"> Diabete 1 </h2>
+            <img src="img/Insulina Levemir.png" class=imagemblock alt="Imagem de  Insulina Levemir"">
+          <h5 class=" card-title"> Insulina Levemir </h5>
+            <div class="card-body">
+              <a
+                href="https://www.drogariasaopaulo.com.br/insulina-levemir-flexpen-novo-nordisk-1-caneta-descartavel-3ml/p">
+                Drogaria São Paulo R$115,99 </a>
+              <a
+                href="https://www.farmaciasnissei.com.br/insulina-levemir-flexpen-3-ml-fracionado?srsltid=AfmBOoqWeKJsoLMQbvb8VkrbKu3Wzhvsm-EDza8-we9tYje1fuovW9IieD0">
+                Nissei R$118,75 </a>
+              <a
+                href="https://www.paguemenos.com.br/levemir-flexpen-3-0ml-com-1-aplicador/p?idsku=39305&srsltid=AfmBOoogfjM2NZrU9LAoJSW2MvfxIQX75pXUBYXr9vplXTbED2gCKPfWMzg">
+                Pague Menos
+                R$116,99</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title"> Diabete 2 </h2>
+            <img src="img/Glifage XR.png" class=imagemblock alt="Imagem de Glifage XR"">
+          <h5 class=" card-title"> Glifage XR 500mg </h5>
+            <div class="card-body">
+              <a
+                href="https://uniaofarmaonline.com.br/produtos/p-glifage-xr-500mg-caixa-com-30-comprimidos-de-acao-prolongada-242029">
+                União
+                R$7,92</a>
+              <a href="https://www.drogaraia.com.br/glifage-xr-500-mg-30-comprimidos.html"> Droga Raia R$8,55</a>
+              <a
+                href="https://www.coopdrogaria.com.br/glifage-xr-merck-500mg--com-30-comprimidos/p?idsku=6870&srsltid=AfmBOoqlknNYH7bN6PZ2YqsYywwC1XEodzBKqzV5c2i1Km6m15Os-b4kNd8">
+                Coop
+                R$8,64</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title"> Diabete 2 </h2>
+            <img src="img/Amaryl.jpeg" class=imagemblock alt="Imagem de Amaryl"">
+          <h5 class=" card-title"> Amaryl 1mg </h5>
+            <div class="card-body">
+              <a href="https://www.drogasil.com.br/amaryl-4-mg-30-comprimidos.html"> Drogasil R$102,49 </a>
+              <a href="https://www.drogal.com.br/glimepirida-1mg-30-cpr-g-mdl/p?idsku=7741"> Drogal R$11,59</a>
+              <a
+                href="https://www.farmaciasnissei.com.br/glimepirida-medley-1mg-30-comprimidos?srsltid=AfmBOop5mEwsUkWJVXLyY6lqzICZdo6hy6YJvxCHDlOwCxzNQLMp1YTYvgY">
+                Nissei
+                R$R$21,21</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title"> Diabete 2 </h2>
+            <img src="img/Januvia 100mg.webp" class=imagemblock alt="Imagem de Januvia"">
+          <h5 class=" card-title"> Januvia 100mg </h5>
+            <div class="card-body">
+              <a href="https://www.drogaraia.com.br/januvia-100mg-28-comprimidos-revestidos.html"> Droga Raia
+                R$235,24</a>
+              <a href="AfmBOooUPs5GXbohMIWb8kQWnoTj8SmfQhqK2pmXW0SxRJZL2KLxzuRaf5Y"> Memed R$248,48</a>
+              <a
+                href="https://www.drogariamoderna.com.br/januvia-100mg-c-28-comp-075299/p?srsltid=AfmBOorvKlRMvro6Vx_m2LkqqmL9D-svY2xRmfcLSNgSlp7VruRMCG0ePg0">Moderna
+                R$289,70</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title"> Diabete 2 </h2>
+            <img src="img/victoza liraglutida 6mg.jpeg" class=imagemblock alt="Imagem de victoza liraglutida 6mg/ml"">
+          <h5 class=" card-title"> Victoza LIraglutida 6mg/ml</h5>
+            <div class="card-body">
+              <a href="https://www.drogaraia.com.br/victoza-6-mg-2-aplicacoes.html"> Droga Raia R$539,97</a>
+              <a
+                href="https://www.farmasaorafael.com.br/victoza-solucao-injetavel-com-2-sistemas-de-aplicacao/p?idsku=1789">
+                São Rafael R$609,16</a>
+              <a
+                href="https://www.drogariamoderna.com.br/victoza-6mg-ml-c-2ser-preench-489395/p?srsltid=AfmBOop9sgnqDqwpuPPri4-Cn9JcbIXPDiPD1dgYlqzkveD-BYXyVDxLgEk">
+                Drogaria Moderna
+                R$581,30</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title"> Catarata </h2>
+            <img src="img/zeaxantina.webp" class=imagemblock alt="zeaxantina img"">
+                <h5 class=" card-title"> Zeaxantina</h5>
+            <div class="card-body">
+              <a
+                href="https://barbozaomanipulacao.com.br/produtos/zeaxantina-1mg-60/?variant=757930551&pf=mc&gclid=CjwKCAjw65-zBhBkEiwAjrqRMB1RROxenQerMih-lFP57fd-7MH4-lLW61P5gqYL5_VK2zjMs85l1hoCGgMQAvD_BwE">
+                Barobozao manipulação R$27,90 </a>
+              <a
+                href="https://www.americanas.com.br/produto/7481759001/zeaxantina-3mg-60-capsulas-lot-nutrition?opn=YSMESP&offerId=659febadcc5530938589b4ed&srsltid=AfmBOorQkalv2b6bvdneKdPoDaaFTNh0FTjc9_Jbv0r_KqaQT4-UI9bO7rU">
+                AMERICANAS R$21,76 </a>
+              <a
+                href="https://www.ultrafarma.com.br/luteina-zeaxantina-natural-green-60-capsulas?srsltid=AfmBOoo28iSeqtFaHLTWM6VzADhhCiHqnOwIipRd0c4lBvHc0PbiTqCwlcw">
+                Ultrafarma R$ 35,80 </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title"> Catarata</h2>
+            <img src="img/vitamina e.png" class=imagemblock alt="vitamica e img">
+            <h5 class="card-title"> Vitamina E</h5>
+            <div class="card-body">
+              <a
+                href="https://www.fslfarma.com/manipulados/vitaminas/vitamina-e-400ui-60-softcaps?parceiro=7689&gclid=CjwKCAjw65-zBhBkEiwAjrqRMJzjvzZ5PZiDDTfJ41QsrzHPQRyNPP_hegFA60QPokx2pOtx9ZjGQxoCd2UQAvD_BwE">
+                FSL Farma R$37,41</a>
+              <a href="https://www.drogaraia.com.br/vitamin-e-400mg-30-capsulas.html"> Droga Raia R$37,99</a>
+              <a href="https://www.drogal.com.br/suplemento-vitaminico-vita-e-30-capsulas-moles/p?idsku=11591"> Drogal
+                R$
+                44,59</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title"> Catarata</h2>
+            <img src="img/luteina.webp" class=imagemblock alt="Luteina img">
+            <h5 class="card-title"> Luteína</h5>
+            <div class="card-body">
+              <a
+                href="https://www.farmaciaanagallis.com.br/luteina-20mg?gad_source=1&gclid=CjwKCAjw65-zBhBkEiwAjrqRMPv1RLPIxaxwhD-3A23GqeMh1GPph5zwP6X8mAebqgu1AW5S5_I3g5pcdnjSxoCEqoQAvD_BwE">
+                Anagallis R$35,60</a>
+              <a
+                href="https://www.fslfarma.com/manipulados/luteina-zeaxantina-zinco?parceiro=7689&gclid=CjwKCAjw65-zBhBkEiwAjrqRMBbSlmcf4ayJbIVdgjXw3eRkaROgae7Crs3zLP28NXAGU3sIAJeinBoCTKcQAvD_BwE">
+                FSL Farma R$51,25</a>
+              <a
+                href="https://www.ultrafarma.com.br/luteina-zeaxantina-natural-green-60-capsulas?srsltid=AfmBOoru3ZR7aYgS8saXbNfU2GszoRuK8sCk9g0tbXA-tU3Z2EC0rLO09lw">
+                Ultrafarma R$35,80</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title"> Catarata</h2>
+            <img src="img/vitamina c.jpg" class=imagemblock alt="imagem vitamina c">
+            <h5 class="card-title"> Vitamina C</h5>
+            <div class="card-body">
+              <a
+                href="https://www.araujo.com.br/vitamin-c--zinco--health-labs-90-capsulas/99454.html?gclid=CjwKCAjw65-zBhBkEiwAjrqRMIIKl5dkTPMZ0GeBZhlfPTl-YVsotRZOXEVyIgxgwdVTazREvxJyFRoCWw8QAvD_BwE">
+                Drogaria Araújo R$38,99</a>
+              <a
+                href="https://www.fslfarma.com/imunidade/vitamina-c-ultra-510mg-imunoestimulante-60-caps?parceiro=7689&gclid=CjwKCAjw65-zBhBkEiwAjrqRMMZhjRzmGjwiT-dzQR2czxmzSHzl5zAFEpv-km84LQPr3VW0O_A56xoC_PcQAvD_BwE">
+                FSL Farma R$32,16</a>
+              <a
+                href="https://www.fmiligrama.com.br/produto/vitamina-c-500mg-60-capsulas-1744?gclid=CjwKCAjw65-zBhBkEiwAjrqRMG9MKRMnk_EDgM7CCX9yp_W0j7Ha1sS1RGKfnqYW5Ku2XaEuKRpIiBoCzvQQAvD_BwE">
+                miligrama R$25,00</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title"> Alzheimer</h2>
+            <img src="img/cloridrato de verapamil.png" class=imagemblock alt="img Cloridrato de Donepezila 5mg">
+            <h5 class="card-title"> Cloridato de Donepezila 5mg </h5>
+            <div class="card-body">
+              <a href="https://www.drogaraia.com.br/cloridrato-donepezila-5mg-ranbaxy-genericos-30-comprimidos-c1.html">
+                Droga Raia R$41,99</a>
+              <a
+                href="https://pill.com.br/products/cloridratodedonepezila-doctorreddys?variant=42908049539279&srsltid=AfmBOop01LqbFAclTKNKXuqNYzQLHdwOAf0HwIkD8zZVM-yY-rhPYAHifc8&selling_plan= ">
+                Pill R$55,43</a>
+              <a
+                href="https://www.extrafarma.com.br/donepezil-5mg-com-30-comprimidos-generico-sandoz/p?srsltid=AfmBOopYZGAJFCzmi_8pU6c1b__7taXmiOvnlG5SSUcWWfSck0co-PhnMIc">
+                Extra Farma R$41,49</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title"> Alzheimer</h2>
+            <img src="img/Cloridrato de Memantina 10mg.jpeg" class=imagemblock alt="img Cloridrato de Memantina 10mg ">
+            <h5 class="card-title"> Cloridrato de Memantina 10mg</h5>
+            <div class="card-body">
+              <a
+                href="https://www.drogaraia.com.br/cloridrato-de-memantina-10mg-eurogarma-genericos-60-comprimidos-revestidos-c1.html?gad_source=1&gclid=CjwKCAjw65-zBhBkEiwAjrqRMHEQTCs-cDEk--wWc9Q9DY0N40se_8YcApMtGR9WeG1RXE8hzOZLxRoCZRMQAvD_BwE">
+                Droga Raia R$25,99</a>
+              <a
+                href="https://www.pensefarma.com.br/cloridrato-memantina-10mg-com-30-comprimidos-generico-teuto--c1--3021497/p?idsku=14102">
+                Pense Farma R$43,69</a>
+              <a
+                href="https://www.drogalider.com.br/cloridrato-de-memantina-teuto-10mg-60-comprimidos-revestidos/p?srsltid=AfmBOooaxos4g-BgrMuPvc8eWpWJadS8Fje9UjlhsE0VEIF1ctA6Neckq7E">
+                Drogalider R$68,19</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title"> Alzheimer</h2>
+            <img src="img/Bromidrato de Galantamina 8mg.webp" class=imagemblock
+              alt="img de Bromidrato de Galantamina 8mg">
+            <h5 class="card-title"> Bromidrato de Galantamina 8mg</h5>
+            <div class="card-body">
+              <a
+                href="https://www.drogaraia.com.br/bromidrato-galantamina-8mg-prati-genericos-30-capsulas-liberacao-prolongada-c1.html">
+                Droga Raia R$70,98</a>
+              <a
+                href="https://www.extrafarma.com.br/galantamina-8mg-com-30-capsulas-generico-prati/p?srsltid=AfmBOooGZzk7U3l-qVuT8mT5yND53MrUnSYHLql_RYlR3-lmQp06HvvvmWY">
+                Extra Farma R$87,49</a>
+              <a href="https://drogariasoares.com.br/galantamina-8mg-com-30-capsulas-biolab-generico/106664-01">
+                Drogaria
+                Soares R$232,63</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title"> Alzheimer</h2>
+            <img src="img/exelon Hemitartarato d.jpeg" class=imagemblock
+              alt="img de xelon Hemitartarato de Rivastigmina 4,5m">
+            <h5 class="card-title"> Exelon 4,5mg </h5>
+            <div class="card-body">
+              <a href="https://www.drogaraia.com.br/exelon-4-5mg-28-capsulas-c1.html"> Droga Raia R$372,01</a>
+              <a
+                href="https://www.paguemenos.com.br/amitiza-8mcg-com-30-capsulas/p?idsku=56886&srsltid=AfmBOorvZXHvgqnZWHzQdlzrxliLEnrbrUYQnMfK2KX-Yt_atEpzLdAitnw">
+                Pague Menos R$79,49</a>
+              <a
+                href="https://www.extrafarma.com.br/galantamina-8mg-com-30-capsulas-generico-prati/p?srsltid=AfmBOoon0OuLxhRIgTMpVWOL23ZGf751JW8NVgkeM43BDCjRZpWURyN8jbo">
+                Extra Farma R$87,49 </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title"> Depressão</h2>
+            <img src="img/Cloridrato de Fluoxetina 20mg.png" class=imagemblock
+              alt="img de Cloridrato de Fluoxetina 20mg">
+            <h5 class="card-title"> Cloridrato de Fluoxetina 20mg</h5>
+            <div class="card-body">
+              <a
+                href="https://www.drogaraia.com.br/cloridrato-de-fluoxetina-20mg-legrand-generico-30-comprimidos-c1.html">
+                Droga Raia R$13,39</a>
+              <a
+                href="https://www.extrafarma.com.br/clor-fluoxetina-gotas-20ml-generico-medleyd-p/p?srsltid=AfmBOorUHcb0B6T36u39329ki4_SJ9Dunb-r2Q6lP1CWEZwT3cRjz-p5_Iw">
+                Extra Frama R$18,69</a>
+              <a
+                href="https://www.paguemenos.com.br/clor-fluoxetina-gotas-20ml-generico-medleyd-p/p?idsku=27177&srsltid=AfmBOopZI54MibvD-7Yx0-Tp3zcVc3huctYd70HjveQ7YVWCJgtKcWRAeqA">
+                Pague Menos R$18,69</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title"> Depressão</h2>
+            <img src="img/Cloridrato de Sertralina 50mg.webp" class=imagemblock
+              alt="img de Cloridrato de Sertralina 50mg">
+            <h5 class="card-title">Cloridrato de Sertralina 50mg</h5>
+            <div class="card-body">
+              <a
+                href="https://www.drogaraia.com.br/cloridrato-de-sertralina-eurofarma-generico-50mg-30-comprimidos-c1.html">
+                Droga Raia R$14,99</a>
+              <a
+                href="https://www.extrafarma.com.br/cl-sertralina-50mg-com-30-comprimidos-generico-eurofarma/p?srsltid=AfmBOoqoUatFPtqcAaQ3a4aO8kzVZlqq3gv6WZ84N8uHnans6doPZi7T2bw">
+                Extrafarma R$16,19 </a>
+              <a
+                href="https://www.paguemenos.com.br/clor-sertralina-50mg-com30-generico-med-p/p?idsku=20109&srsltid=AfmBOopnK7t67PvJgqhJ3D5T8y4Q7rUJhxJzQom6LFBdzbYRnUlNpUvPHuQ">
+                Pague Menos R$17,85</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title"> Depressão</h2>
+            <img src="img/Cloridrato Venlafaxina 75mg.webp" class=imagemblock alt="img de Cloridrato Venlafaxina 75mg">
+            <h5 class="card-title"> Cloridrato Venlafaxina 75mg </h5>
+            <div class="card-body">
+              <a href="https://www.drogariasaopaulo.com.br/cloridrato-venlafaxina-75mg-medley-30-comprimidos/p">
+                Drogaria
+                São Paulo R$37,99</a>
+              <a
+                href="https://www.paguemenos.com.br/venlafaxina-cloridrato-75mg-30--capsulas-medley/p?idsku=29367&srsltid=AfmBOoroePLU07rGkq1FBO4Uf4IHJ_Nw5bgY4RrPVuJhflNZEYlfqeGqvws">
+                Pague Menos R$39,99</a>
+              <a
+                href="https://www.drogalider.com.br/cloridrato-de-venlafaxina-torrent-75mg-30-capsulas-gelatinosas-duras/p?srsltid=AfmBOoqF-LcWT3QOfEDkTbvu715GV30E3egEQMauTws5L02-euSfnTDy6lk">
+                Drogalider R$34,21</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title"> Depressão</h2>
+            <img src="img/Cloridrato de Bupropiona 150mg.png" class=imagemblock
+              alt="img de Cloridrato de Bupropiona 150mg">
+            <h5 class="card-title"> Cloridrato de Bupropiona 150mg </h5>
+            <div class="card-body">
+              <a href="https://www.drogaraia.com.br/31.html"> Droga Raia R$60,80</a>
+              <a
+                href="https://www.precopopular.com.br/bupropiona-novaquimica-150mg-com-30-comprimidos/p?idsku=12173&srsltid=AfmBOorzJa-IgkUWfCWJzKbrZC2qrf5AwhDrO32XXJxa0gtuqswF77saXrw">
+                Preço Popular R$17,38</a>
+              <a
+                href="https://www.drogariasantamarta.com.br/399579-cloridrato-de-bupropiona-nova-quimica-150mg-30-comprimidos-generico-c1/p?idsku=13780">
+                Santa Marta R$69,99
+
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title"> Verminoses </h2>
+            <img src="img/Azox 20mg.png" class=imagemblock alt="img de Azox 20mg">
+            <h5 class=" card-title"> Azox 20mg</h5>
+            <div class="card-body">
+              <a href="https://www.drogal.com.br/azox-20mg-ml-po-para-suspensao-oral-100ml/p?idsku=9471"> Drogal
+                R$54,79</a>
+              <a
+                href="https://www.paguemenos.com.br/azox-20mg-suspensao-oral-100ml/p?idsku=51372&srsltid=AfmBOorADUk9yiVOLhN8QgI3f1ltkH_Ugsfx144LZ6fIdky955mWtXrBwKY">
+                Pague Menos R$55,49 </a>
+              <a href="NOME DA FARMACIA E VALOR"> Preço E NOME DA FARMACIA</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title"> Verminoses </h2>
+            <img src="img/Ivermectina 6mg.png" class=imagemblock alt="img de Ivermectina 6mg">
+            <h5 class=" card-title"> Ivermectina 6mg
+            </h5>
+            <div class="card-body">
+              <a href="https://www.farmaciafutura.com.br/qualidade-de-vida/ivermectina-6mg"> Paague Menos R$22,59</a>
+              <a href="https://www.drogaraia.com.br/ivermectina-6mg-germed-genericos-com-4-comprimidos.html"> Droga Raia
+                R$25,40 </a>
+              <a href="https://www.drogariaspacheco.com.br/ivermectina-6mg-generico-vitapan-4-comprimidos/p"> Pacheco
+                R$10,99</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title"> Verminoses </h2>
+            <img src="img/Albendazol 400Mg 5 Comprimidos.webp" class=imagemblock alt="img de Albendazol 400mg">
+            <h5 class=" card-title"> Albendazol 400mg </h5>
+            <div class="card-body">
+              <a
+                href="https://www.drogaraia.com.br/albendazol-400mg-prati-donaduzzi-genericos-com-5-comprimidos-mastigaveis.html">Droga
+                Raia R$15,59</a>
+              <a
+                href="https://www.paguemenos.com.br/albendazol-400mg-com-5-comprimidos-mastigaveis-generico-prati-donaduzzi/p">
+                Pague Menos R$15,39</a>
+              <a
+                href="https://www.ultrafarma.com.br/albendazol-400mg-com-5-comprimido-mastigaveis-prati-donaduzzi-generico">
+                Ultrafarma R$12,68</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title"> Verminoses </h2>
+            <img src="img/Secnidazol 1000mg.png" class=imagemblock alt="img de Secnidazol 1000mg ">
+            <h5 class=" card-title"> Secnidazol 1000mg </h5>
+            <div class="card-body">
+              <a href="https://www.drogaraia.com.br/secnidazol-1000-mg-medley-generico-2-comprimidos.html"> Droga Raia
+                R$12,19</a>
+              <a href="EAIaIQobChMI3o2xiK3WhgMVcSmtBh13rQufEAQYAiABEgLaufD_BwE"> Droga Lider R$9,40</a>
+              <a
+                href="https://www.drogarianossafarma.com.br/secnidazol-nova-quimica-1000mg-caixa-com-2-comprimidos-revestidos/p?srsltid=AfmBOooQEnEq-7UiI28HA0APBaW-2-JmEhlOPhjoqJBTEai2C5WdTvQZZb0">
+                Nossa Farma</a> R$9,29
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title">Febre</h2>
+            <img src="img/parecetamol.png" class=imagemblock alt="">
+            <h5 class="card-title"> Paracetamol </h5>
+            <div class="card-body">
+              <a href="https://www.drogaraia.com.br/paracetamol-750mg-cimed-genericos-com-20-comprimidos.html"> Droga
+                Daia R$8,99</a>
+              <a href="https://www.araujo.com.br/paracetamol-750mg-medquimica-generico/83307.html"> Drogaria Araujo
+                R$11,99</a>
+              <a
+                href="https://www.paguemenos.com.br/paracetamol-750mg-com-20-comprimidos-generico-neo-quimica/p?idsku=45505">
+                Drogaria Pague Menos
+                R$10,56</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title">Febre</h2>
+            <img src="img/dipirona...webp" class=imagemblock alt="">
+            <h5 class="card-title"> Dipirona </h5>
+            <div class="card-body">
+              <a href="https://www.drogaraia.com.br/dipirona-monoidratada-1000mg-20-comprimidos.html"> Droga
+                Raia R$18,20</a>
+              <a href="https://www.araujo.com.br/dipirona-1g-ems-generico-com-10-comprimidos/94239.html"> Drogaria
+                Araujo
+                R$13,99</a>
+              <a
+                href="https://www.paguemenos.com.br/dipirona-monoidratada-500mg-com-30-comprimidos-generico-prati-donaduzzi/p?idsku=54102">
+                Drogaria Pague Menos
+                R$17,59</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title">Febre</h2>
+            <img src="img/ibuprofeno.png" class=imagemblock alt="">
+            <h5 class="card-title"> Ibuprofeno </h5>
+            <div class="card-body">
+              <a href="https://www.drogaraia.com.br/ibuprofeno-100-mg-ml-susp-oral-20ml.html"> Droga
+                Raia R$6,90</a>
+              <a href="https://www.araujo.com.br/ibuprofeno-50mgml-teuto-generico-gotas/61848.html"> Drogaria Araujo
+                R$17,89</a>
+              <a href="https://www.drogariaspacheco.com.br/ibuprofeno-capsula-400mg-generico-medley-10-capsulas/p">
+                Drogaria Pacheco
+                R$11,09</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title">Febre</h2>
+            <img src="img/tylenol.png" class=imagemblock alt="">
+            <h5 class="card-title"> Tylenol </h5>
+            <div class="card-body">
+              <a href="https://www.drogaraia.com.br/tylenol-star-power-500mg-20-comprimidos.html"> Droga
+                Raia R$35,00</a>
+              <a href="https://www.araujo.com.br/tylenol-500mg-20-comprimidos/69449.html"> Drogaria Araujo
+                R$35,00</a>
+              <a href="https://www.drogariaspacheco.com.br/tylenol-dc-500mg---65mg-multiplas-dores-20-comprimidos/p">
+                Drogaria Pacheco
+                R$35,00</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title">AVC</h2>
+            <img src="img/Urbanil Clobazam.jpg" class=imagemblock alt="">
+            <h5 class="card-title">Urbanil Clobazam </h5>
+            <div class="card-body">
+              <a href="https://www.drogaraia.com.br/urbanil-10mg-20-comprimidos-b1.html"> Droga
+                raia R$18,29</a>
+              <a href="https://www.araujo.com.br/urbanil-10mg-com-20-comprimidos/473.html"> Drogaria Araujo
+                R$16,99</a>
+              <a href="https://www.drogariaspacheco.com.br/urbanil-10mg-sanofi-aventis-20-comprimidos/p"> Drogaria
+                Pacheco
+                R$17,29</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title">AVC</h2>
+            <img src="img/dipirona...webp" class=imagemblock alt="">
+            <h5 class="card-title"> Dipirona </h5>
+            <div class="card-body">
+              <a href="https://www.drogaraia.com.br/dipirona-monoidratada-1000mg-20-comprimidos.html"> Droga
+                Raia R$18,20</a>
+              <a href="https://www.araujo.com.br/dipirona-1g-ems-generico-com-10-comprimidos/94239.html"> Drogaria
+                Araujo
+                R$13,99</a>
+              <a
+                href="https://www.paguemenos.com.br/dipirona-monoidratada-500mg-com-30-comprimidos-generico-prati-donaduzzi/p?idsku=54102">
+                Drogaria Pague Menos
+                R$17,59</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title">AVC</h2>
+            <img src="img/captopril.jpg" class=imagemblock alt="">
+            <h5 class="card-title"> Captopril </h5>
+            <div class="card-body">
+              <a href="https://www.drogaraia.com.br/captopril-25-mg-medley-generico-30-comprimidos.html"> Droga
+                Raia R$18,29</a>
+              <a href="https://www.araujo.com.br/captopril-25mg-medley-generico-com-30-comprimidos/18988.html">
+                Drogaria Araujo
+                R$4,99</a>
+              <a href="https://www.drogariaspacheco.com.br/captopril-25mg-generico-medley-30-comprimidos/p"> Drogaria
+                Pacheco
+                R$5,69</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title">AVC</h2>
+            <img src="img/Ácido acetilsalicílico 100 mg.jpeg" class=imagemblock alt="">
+            <h5 class="card-title"> Ácido acetilsalicílico 100 mg </h5>
+            <div class="card-body">
+              <a
+                href="https://www.drogaraia.com.br/acido-acetilsalicilico-100mg-ems-generico-1-blister-com-10-comprimidos.html">
+                Droga
+                Raia R$2,89</a>
+              <a
+                href="https://www.araujo.com.br/acido-acetilsalicilico-100mg-infantil-ems-generico-com-10-comprimidos/46884.html">
+                Drogaria Araujo
+                R$3,67</a>
+              <a
+                href="https://www.drogariaspacheco.com.br/acido-acetil-salicilico-infantil-100mg-generico-ems-10-comprimidos/p">
+                Drogaria
+                Pacheco
+                R$2,89</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title">Gastrite</h2>
+            <img src="img/Omeprazol.jpg" class=imagemblock alt="">
+            <h5 class="card-title"> Omeprazol </h5>
+            <div class="card-body">
+              <a href="https://www.drogaraia.com.br/omeprazol-20mg-medley-generico-42-capsulas.html"> Droga
+                raia R$15,39</a>
+              <a href="https://www.araujo.com.br/omeprazol-20mg-medley-generico-com-42-capsulas/78433.html"> Drogaria
+                Araujo
+                R$55,99</a>
+              <a href="https://www.drogariaspacheco.com.br/omeprazol-20mg-generico-medley-42-capsulas/p"> Drogaria
+                Pacheco
+                R$15,39</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title">Gastrite</h2>
+            <img src="img/Cimetidina.jpeg" class=imagemblock alt="">
+            <h5 class="card-title"> Cimetidina </h5>
+            <div class="card-body">
+              <a href="https://www.paguemenos.com.br/cimetidina-200mg-com-10-comprimidos-generico-teuto/p?idsku=68111">
+                Drogaria Pague Menos
+                R$8,19</a>
+              <a href="https://www.araujo.com.br/cimetidina-200mg-teuto-generico-com-10-comprimidos/41158.html">
+                Drogaria Araujo
+                R$6,99</a>
+              <a href="https://www.drogariaspacheco.com.br/cimetidina-200mg-generico-teuto-10-comprimidos/p"> Drogaria
+                Pacheco
+                R$6,03</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title">Gastrite</h2>
+            <img src="img/Pantoprazol.png" class=imagemblock alt="">
+            <h5 class="card-title"> Pantoprazol </h5>
+            <div class="card-body">
+              <a href="https://www.drogaraia.com.br/pantoprazol-40mg-medley-genericos-28-comprimidos-revestidos.html">
+                Droga
+                Raia R$27,57</a>
+              <a href="https://www.araujo.com.br/pantoprazol-20mg-medley-generico-com-42-comprimidos/77897.html">
+                Drogaria Araujo
+                R$24,99</a>
+              <a href="https://www.drogariaspacheco.com.br/pantoprazol-40mg-generico-medley-42-comprimidos/p"> Drogaria
+                Pacheco
+                R$32,99</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title">Gastrite</h2>
+            <img src="img/Famotidina.png" class=imagemblock alt="">
+            <h5 class="card-title"> Famotidina </h5>
+            <div class="card-body">
+              <a href="https://www.drogaraia.com.br/famox-20-mg-10-comprimidos.html"> Droga
+                raia R$31,99</a>
+              <a href="https://www.araujo.com.br/famox-20mg-com-10-comprimidos/32504.html"> Drogaria Araujo
+                R$34,10</a>
+              <a href="https://www.drogariaspacheco.com.br/famox-20mg-ache-10-comprimidos/p"> Drogaria
+                Pacheco
+                R$29,29</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title">Pneumonia</h2>
+            <img src="img/Amoxicilina.jpg" class=imagemblock alt="">
+            <h5 class="card-title"> Amoxicilina </h5>
+            <div class="card-body">
+              <a href="https://www.drogaraia.com.br/amoxicilina-250mg-cimed-genericos-suspensao-oral-com-150ml.html">
+                Droga
+                raia R$11,47</a>
+              <a
+                href="https://www.araujo.com.br/amoxicilina-250mg5ml-neo-quimica-generico-suspensao-com-150ml/78310.html">
+                Drogaria Araujo
+                R$18,99</a>
+              <a href="https://www.drogariaspacheco.com.br/amoxicilina-500mg-generico-prati-21-capsulas/p"> Drogaria
+                Pacheco
+                R$12,89</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title">Pneumonia</h2>
+            <img src="img/Azitromicina.png" class=imagemblock alt="">
+            <h5 class="card-title"> Azitromicina </h5>
+            <div class="card-body">
+              <a href="https://www.drogaraia.com.br/azitromicina-500mg-prati-generico-5-comprimidos-revestidos.html">
+                Droga
+                raia R$14,49</a>
+              <a href="https://www.araujo.com.br/azitromicina-500mg-geolab-generico-com-3-comprimidos/87308.html">
+                Drogaria Araujo
+                R$15,12</a>
+              <a href="https://www.drogariaspacheco.com.br/azitromicina-500mg-generico-prati-donaduzzi-5-comprimidos/p">
+                Drogaria
+                Pacheco
+                R$14,49</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title">Pneumonia</h2>
+            <img src="img/Claritromicina.jpg" class=imagemblock alt="">
+            <h5 class="card-title"> Claritromicina </h5>
+            <div class="card-body">
+              <a href="https://www.drogaraia.com.br/claritromicina-500mg-medley-generico-14-comp-revestidos.html"> Droga
+                raia R$62,99</a>
+              <a href="https://www.araujo.com.br/claritromicina-500mg-medley-generico-com-10-comprimidos/18359.html">
+                Drogaria Araujo
+                R$44,99</a>
+              <a href="https://www.drogariaspacheco.com.br/claritromicina-500mg-generico-medley-14-comprimidos/p">
+                Drogaria
+                Pacheco
+                R$62,99</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title">Pneumonia</h2>
+            <img src="img/Levofloxacino.webp" class=imagemblock alt="">
+            <h5 class="card-title"> Levofloxacino </h5>
+            <div class="card-body">
+              <a href="https://www.drogaraia.com.br/levofloxacino-500mg-ems-generico-10-comprimidos-revestidos.html">
+                Droga
+                raia R$29,29</a>
+              <a href="https://www.araujo.com.br/levofloxacino-500mg-biosintetica-generico-com-7-comprimidos/2126.html">
+                Drogaria Araujo
+                R$29,95</a>
+              <a href="https://www.drogariaspacheco.com.br/levofloxacino-500mg-generico-cimed-10-comprimidos/p">
+                Drogaria
+                Pacheco
+                R$35,99</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title">Osteoartrite </h2>
+            <img src="img/Nimesulida.jpeg" class=imagemblock alt="">
+            <h5 class="card-title"> Nimesulida </h5>
+            <div class="card-body">
+              <a href="https://www.drogaraia.com.br/cimelide-12-comprimidos.html"> Droga
+                raia R$13,09</a>
+              <a href="https://www.araujo.com.br/nimesulida-100mg-cimed-generico-com-12-comprimidos/3848.html"> Drogaria
+                Araujo
+                R$8,99</a>
+              <a href="https://www.drogariaspacheco.com.br/nimesulida-100mg-generico-cimed-12-comprimidos/p"> Drogaria
+                Pacheco
+                R$4,99</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title">Osteoartrite </h2>
+            <img src="img/Diclofenaco de Potássio.jpeg" class=imagemblock alt="">
+            <h5 class="card-title"> Diclofenaco de Potássio </h5>
+            <div class="card-body">
+              <a href="https://www.drogaraia.com.br/diclofenaco-potassico-50-mg-teuto-generico-com-20-comprimidos.html">
+                Droga
+                raia R$11,19</a>
+              <a
+                href="https://www.araujo.com.br/diclofenaco-potassico-50mg-medley-generico-com-20-comprimidos/24152.html?gclid=CjwKCAjwjqWzBhAqEiwAQmtgT4WcvnQ9fn8pc-sD6VeRWQ_NU30jJsbSc6rwWCA_yNunVvWu0E7G-RoCEzEQAvD_BwE">
+                Drogaria Araujo
+                R$7,99</a>
+              <a
+                href="https://www.drogariaspacheco.com.br/diclofenaco-potassio-50mg-teuto-dispersivel-20-comprimidos/p">
+                Drogaria
+                Pacheco
+                R$10,39</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title">Osteoartrite </h2>
+            <img src="img/Meloxicam.png" class=imagemblock alt="">
+            <h5 class="card-title"> Meloxicam </h5>
+            <div class="card-body">
+              <a href="https://www.drogaraia.com.br/meloxicam-15mg-eurofarma-genericos-10-comprimidos.html"> Droga
+                raia R$18,19</a>
+              <a
+                href="https://www.araujo.com.br/meloxicam-15mg-injetavel-eurofarma-generico-1-ampola-de-15ml/71589.html">
+                Drogaria Araujo
+                R$9,91</a>
+              <a href="https://www.drogariaspacheco.com.br/meloxicam-15mg-eurofarma-10-comprimidos/p"> Drogaria
+                Pacheco
+                R$13,89</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title">Osteoartrite </h2>
+            <img src="img/Piroxicam.jpg" class=imagemblock alt="">
+            <h5 class="card-title"> Piroxicam </h5>
+            <div class="card-body">
+              <a href="https://www.drogaraia.com.br/piroxicam-20-mg-neo-quimica-genericos-10-capsulas.html"> Droga
+                raia R$11,46</a>
+              <a href="https://www.araujo.com.br/piroxicam-20mg-ems-generico-com-15-capsulas/38195.html"> Drogaria
+                Araujo
+                R$12,99</a>
+              <a href="https://www.drogariaspacheco.com.br/piroxicam-20mg-generico-ems-10-capsulas/p"> Drogaria
+                Pacheco
+                R$10,79</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title">Dor Muscular </h2>
+            <img src="img/Torsilax.jpg" class=imagemblock alt="">
+            <h5 class="card-title"> Torsilax </h5>
+            <div class="card-body">
+              <a href="https://www.drogaraia.com.br/torsilax-com-12-comprimidos.html"> Droga
+                raia R$9,49</a>
+              <a href="https://www.araujo.com.br/torsilax-com-12-comprimidos/77657.html"> Drogaria Araujo
+                R9,99</a>
+              <a href="https://www.drogariaspacheco.com.br/torsilax-12-comprimidos/p"> Drogaria
+                Pacheco
+                R$9,49</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title">Dor Muscular </h2>
+            <img src="img/Dorflex.jpg" class=imagemblock alt="">
+            <h5 class="card-title"> Dorflex </h5>
+            <div class="card-body">
+              <a href="https://www.drogaraia.com.br/dorflex-analgesico-cartela-avulsa-10-comprimidos.html"> Droga
+                raia R$6,99</a>
+              <a href="https://www.araujo.com.br/analgesico-dorflex-10-comprimidos/19886.html"> Drogaria Araujo
+                R6,99</a>
+              <a href="https://www.drogariaspacheco.com.br/analgesico-dorflex-10-comprimidos/p"> Drogaria
+                Pacheco
+                R$7,82</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title">Dor Muscular </h2>
+            <img src="img/Infralax.png" class=imagemblock alt="">
+            <h5 class="card-title"> Infralax </h5>
+            <div class="card-body">
+              <a href="https://www.drogaraia.com.br/infralax-com-15-comprimidos.html"> Droga
+                raia R$7,11</a>
+              <a href="https://www.araujo.com.br/infralax-com-15-comprimidos/71565.html"> Drogaria Araujo
+                R14,99</a>
+              <a href="https://www.drogariaspacheco.com.br/infralax-ems-15-comprimidos/p"> Drogaria
+                Pacheco
+                R$13,89</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title">Dor Muscular </h2>
+            <img src="img/Massageol.webp" class=imagemblock alt="">
+            <h5 class="card-title"> Massageol</h5>
+            <div class="card-body">
+              <a href="https://www.drogaraia.com.br/massageol-spray-120ml.html"> Droga
+                raia R$26,90</a>
+              <a href="https://www.araujo.com.br/massageol-aerosol-120ml/32420.html"> Drogaria Araujo
+                R24,99</a>
+              <a href="https://www.drogariaspacheco.com.br/aerosol-massageol-neo-quimica-120ml/p"> Drogaria
+                Pacheco
+                R$26,90</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title">Artrose</h2>
+            <img src="img/parecetamol.png" class=imagemblock alt="">
+            <h5 class="card-title"> Paracetamol</h5>
+            <div class="card-body">
+              <a href="https://www.drogaraia.com.br/tylenol-750mg-20-comprimidos.html"> Droga
+                Raia R$43,99</a>
+              <a href="https://www.araujo.com.br/paracetamol-500mg-prati-generico-com-20-comprimidos/54529.html"> Araujo
+                R$11,99</a>
+              <a href="https://www.drogariaspacheco.com.br/paracetamol-200mgml-gotas-15ml-g-cimed/p"> Pacheco
+                R$9,89</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title">Artrose</h2>
+            <img src="img/Tramadol.jpg" class=imagemblock alt="">
+            <h5 class="card-title"> Tramadol</h5>
+            <div class="card-body">
+              <a href="https://www.drogaraia.com.br/cloridrato-de-tramadol-50mg-ems-generico-10-capsulas-a2.html"> Droga
+                raia R$8,79</a>
+              <a href="https://www.araujo.com.br/tramadol-50mg-teuto-generico-com-10-capsulas/61902.html"> Araujo
+                R$13,99</a>
+              <a href="https://www.drogariaspacheco.com.br/tramadol-50mg-generico-teuto-10-capsulas/p"> Pacheco
+                R$10,09</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title">Artrose</h2>
+            <img src="img/Glucosamina e Condroitina.jpg" class=imagemblock alt="">
+            <h5 class="card-title"> Glucosamina e Condroitina</h5>
+            <div class="card-body">
+              <a
+                href="https://www.drogaraia.com.br/condroflex-500mg-sulfato-de-glicosamina-400mg-sulfato-de-condroitina-60-capsulas.html">
+                Droga
+                Raia R$126,99</a>
+              <a href="https://www.araujo.com.br/condroflex-500mg--400mg-com-60-capsulas/56416.html"> Araujo
+                R$114,99</a>
+              <a
+                href="https://www.drogariaspacheco.com.br/glucosamina-e-condroitina---30-saches-sabor-laranja-935192058/p">
+                Pacheco
+                R$62,50</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title"> Artrite</h2>
+            <img src="img/Metotrexato.jpeg" class=imagemblock alt="">
+            <h5 class="card-title"> Metotrexato</h5>
+            <div class="card-body">
+              <a href="https://www.drogaraia.com.br/metrexato-2-5mg-24-comprimidos.html"> Droga
+                raia R$29,19</a>
+              <a href="https://www.araujo.com.br/metrexato-25mg-com-24-comprimidos/67083.html"> Araujo
+                R$29,99</a>
+              <a href="https://www.drogariaspacheco.com.br/metrexato-2-5mg-blausiegel-24-comprimidos/p"> Pacheco
+                R$29,15</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title"> Artrite</h2>
+            <img src="img/ibuprofeno.png" class=imagemblock alt="">
+            <h5 class="card-title"> Ibuprofeno</h5>
+            <div class="card-body">
+              <a
+                href="https://www.drogaraia.com.br/ibuprofeno-600mg-farmaco-generico-com-20-comprimidos-revestidos.html">
+                Droga
+                raia R$8,69</a>
+              <a href="https://www.araujo.com.br/ibuprofeno-600mg-prati-generico-com-20-comprimidos/58307.html"> Araujo
+                R$8,99</a>
+              <a href="https://www.drogariaspacheco.com.br/ibuprofeno-600mg-generico-althaia-10-capsulas/p"> Pacheco
+                R$15,29</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title"> Alergia</h2>
+            <img src="img/Histamin 2mg.webp" class=imagemblock alt="">
+            <h5 class="card-title">Histamin 2mg</h5>
+            <div class="card-body">
+              <a
+                href="https://www.farmaponte.com.br/histamin-2mg-caixa-com-20-comprimidos/p?srsltid=AfmBOooYt8wpcqx-IOAjCvLbMqqHNwwpTsJTn5XMWunqRC2QlBVJeEYZbhk">
+                Farma Ponte R$14,45 </a>
+              <a
+                href="https://www.ihypera.com.br/histamin-caixa-20-comprimidos-19954_pai/p?idsku=1090&srsltid=AfmBOorRj-rJGM_JOCGWjUHNsjp0cOipivYn-Pb_25jE4uyINUCajyN3mwQ">
+                Hypera R$10,02 </a>
+              <a href="https://www.drogariasminasmais.com.br/histamin-com-20-comprimidos---neo-quimica/p"> Minas Mais R$
+                6,99
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title"> Alergia</h2>
+            <img src="img/loratadina 10mg.jpg" class=imagemblock alt="">
+            <h5 class="card-title">loratadina 10mg</h5>
+            <div class="card-body">
+              <a
+                href="https://ledafarma.com.br/produtos/loratadina-10-mg-com-ct-bl-al-plas-pvc-trans-x-12-geolab-indstria-farmacutica-sa">
+                R$9,99 </a>
+              <a
+                href="https://www.araujo.com.br/loratamed-10mg-com-12-comprimidos/70514.html?gclid=CjwKCAjwg8qzBhAoEiwAWagLrAbdhaD0Aj_LfESzI4L3j5famzrHCE4TKabW-Bxy-7GXZiCuFJlk6xoCpZAQAvD_BwE">
+                Drogaria Araujo R$9,99 </a>
+              <a
+                href="https://www.drogarianovaesperanca.com.br/neo-loratadin-10mg-com-12-comprimidos-1541/?gclid=CjwKCAjwg8qzBhAoEiwAWagLrHiCQ-DfyPpa_EXYV_WjCwV1AwmJr-HmZeIQNtwSrbJnPeVbLFH3qhoCdqQQAvD_BwE">
+                Nova Esperança R$3,29 </a>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title"> Alergia</h2>
+            <img src="img/Fexofenadina.png" class=imagemblock alt="">
+            <h5 class="card-title"> Fexofenadina 120mg </h5>
+            <div class="card-body">
+              <a
+                href="https://www.araujo.com.br/fexofenadina-120mg-cimed-generico-com-10-comprimidos/90320.html?srsltid=AfmBOoq5Z_noyNDbaQBHpVmw2eJKqMHC5Zxfr7DsDnHBTLXXmmgRPGuwt_I">
+                Drogaria Araujo R$17,99 </a>
+              <a
+                href="https://www.ultrafarma.com.br/fexofenadina-120mg-10-comprimidos-cimed-generico?srsltid=AfmBOopGaQghftUR6OY5X5WjBq-BZTzP5l3ExlIE2PFQRf9tmTeBF_YGV-U">
+                Ultra Farma R$14,98 </a>
+              <a
+                href="https://www.panvel.com/panvel/cloridrato-fexofenadina-120-mg-10-comprimidos-revestidos-cimed-generico/p-119247">
+                Panvel R$31,29 </a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title"> Alergia</h2>
+            <img src="img/HYSTIN 2MG.webp" class=imagemblock alt="">
+            <h5 class="card-title"> Hystin 2MG </h5>
+            <div class="card-body">
+              <a
+                href="https://www.ultrafarma.com.br/dexclorfeniramina-hystin-2-mg-com-20-comprimidos?srsltid=AfmBOopyZzbokoFOkEcEqMlcYYnUnshIVWRDrAUb3auFO7BoggSaplo39tY">
+                Ultra Farma R$2,40 </a>
+              <a href="CjwKCAjwg8qzBhAoEiwAWagLrN2jlGm9TYCGD8DhiTyrRgkvqx1O9RwA4JmRTgixVoFKigS15s8T1xoCrN0QAvD_BwE">
+                Drogaria
+                Araujo R$6,99 </a>
+              <a href="https://www.drogarianovaesperanca.com.br/hystin-2mg-com-20-comprimidos-28926/"> Drogaria Nova
+                Esperança
+                R$2,29 </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title"> Resfriado </h2>
+            <img src="img/Decongex Plus.png" class=imagemblock alt="">
+            <h5 class="card-title">Decongex Plus</h5>
+            <div class="card-body">
+              <a
+                href="https://www.drogal.com.br/decongex-plus-12-comprimidos-revestidos-de-liberacao-programada/p?idsku=11023">
+                Drogal R$25,49 </a>
+              <a href="www.araujo.com.br/decongex-plus-com-12-comprimidos/13077.html?srsltid="> Drogaria Araujo
+                R$26,09</a>
+              <a
+                href="https://www.drogariasaopaulo.com.br/decongex-plus-ache-revestido-12-comprimidos/p?idsku=80683&utm_source=google&utm_medium=cpc&utm_campaign=google-shp">
+                Drogaria São Paulo R$25,50 </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title"> Resfriado </h2>
+            <img src="img/Resfenol.webp" class=imagemblock alt="">
+            <h5 class="card-title"> Resfenol </h5>
+            <div class="card-body">
+              <a href="https://www.drogal.com.br/resfenol20capsulas/p?idsku=11716"> Drogal R$15,12 </a>
+              <a
+                href="https://www.araujo.com.br/resfenol-com-20-capsulas/14766.html?gclid=CjwKCAjwg8qzBhAoEiwAWagLrA26-AyUZsSkDPnksEc-fccpRcTMjXlYsM_IcGh3waIjfu9b5BcpJRoCDNcQAvD_BwE">
+                Drogaria Araujo R$17,99 </a>
+              <a href="https://www.drogariasaopaulo.com.br/resfenol-hertz-20-capsulas/p?idsku=38830"> Drogaria São Paulo
+                R$16,99 </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title"> Alergia</h2>
+            <img src="img/HYSTIN 2MG.webp" class=imagemblock alt="">
+            <h5 class="card-title"> Hystin 2MG </h5>
+            <div class="card-body">
+              <a
+                href="https://www.drogariaspacheco.com.br/expectorante-cimegripe-muc-600mg-vitamina-c-1g-cimed-10-comprimidos-efervescentes/p?idsku=820962">
+                Pachedo R$18,99 </a>
+              <a
+                href="https://www.drogalider.com.br/cimegripe-c-zinco-10-comprimidos-efervescentes/p?srsltid=AfmBOoqg5MIz4BVTlW5fZRm6cr7TdItxwsRceLuI_lA0Z4C-1f78gFw3eAQ">
+                Drogalider R$16,90 </a>
+              <a href="https://www.drogarianovaesperanca.com.br/cimegripe-c-zinco-com-10-comprimidos-36775/"> Drogaria
+                Nova
+                Esperança R$7,25 </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title"> Resfriado </h2>
+            <img src="img/Benegripe.webp" class=imagemblock alt="">
+            <h5 class="card-title"> Benegrip </h5>
+            <div class="card-body">
+              <a
+                href="https://www.ihypera.com.br/benegrip-regular-12-comprimidos-551/p?idsku=550&campaignid=20621090616&adposition=&adgroupid=&matchtype=&keyword=&uf=&nomecampanha=Pmax-VitaminaseSuplementos&pht=&gad_source=4&gclid=CjwKCAjwg8qzBhAoEiwAWagLrD_0nlQeL0liyeYdE0HTFDd57uEV1fL5xvu_2YZoyUclZjhFxOK_VBoCEV0QAvD_BwE">
+                Hypera R$19,46 </a>
+              <a href=" "> R$3,51 </a>
+              <a href=""> R$3,19 </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title"> Hemorroida </h2>
+            <img src="img/DIOeH.png" class=imagemblock alt="">
+            <h5 class="card-title"> DIOeH </h5>
+            <div class="card-body">
+              <a
+                href="https://www.farma22.com.br/dioeh--diosmina---hesperidina--900mg---100mg-30-comprimidos-revestidos-generico-biolab/p?idsku=480583093&srsltid=AfmBOoovZd1aH3tO26stMXLVh3LZ4tcFTX4qpyEK2w5eSchy1csr9jbH6L0">
+                Farma22 R$60,90
+              </a>
+              <a
+                href="https://www.drogarianovaesperanca.com.br/dioeh-diosmina-hesperidina-900mg-100mg-com-30-comprimidos-58425/">
+                Drogaria Nova Esperança R$3,51 </a>
+              <a
+                href="https://www.drogariadias.com.br/diosmina-hesperidina-900mg-100mg-biolab-genericos-com-30-comprimidos-p78751-p6083?utm_source=google&utm_medium=cpc&utm_campaign=lojavirtual">
+                Drogaria do Dias R$69,00 </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card" style="width: 18rem;">
+            <h2 class="card-title"> Hemorroida </h2>
+            <img src="img/imescard.png" class=imagemblock alt="">
+            <h5 class="card-title"> imescard </h5>
+            <div class="card-body">
+              <a href="https://www.drogal.com.br/imescard-pilulas-c36/p?idsku=11111"> Drogal R$30,89 </a>
+              <a href="https://www.drogariadoatacado.com.br/imescard-pilula-com-36-comprimidos"> Drogaria Do Atacado
+                R$24,34 </a>
+              <a href="https://www.drogariadoatacado.com.br/imescard-pilula-com-36-comprimidos"> Drogaria do Atacado
+                R$23,12 pix </a>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Rodapé -->
+  <div class="footer">
+    <p>Remedy Check - Última atualização dos valores 27/06/2024</p>
+
+  </div>
+</body>
+
+<script>
+  let products = [];
+  const row = document.getElementById("products-row");
+  
+  const getProducts = async () => {
+    const response = await fetch('http://localhost:7000/api/products');
+    const result = await response.json();
+    return result;
+  }
+
+
+  const productCardBuilder = (product) => {
+    const productCard = document.createElement('div');
+    productCard.className = "col-md-6";
+    productCard.innerHTML = `
+      <div class="card" style="width: 18rem;">
+        <h2 class="card-title">${product.category}</h2>
+        <img src="${product.image}" class=imagemblock alt="Imagem de ${product.name}">
+        <h5 class="card-title">${product.name}</h5>
+        <div class="card-body">
+          <a> ${product.pharmacies[0].name} - R$ ${product.pharmacies[0].price}</a>
+          <a> ${product.pharmacies[1].name} - R$ ${product.pharmacies[1].price}</a>
+          <a> ${product.pharmacies[2].name} - R$ ${product.pharmacies[2].price}</a>
+        </div>`
+
+      return productCard;
+  }
+
+  const loadProducts = async () => {
+    const products = await getProducts();
+
+    products.forEach(element => {
+      const productCard = productCardBuilder(element);
+      row.appendChild(productCard);
+    });
+  }
+
+  loadProducts();
+
+</script>
+</html>

@@ -1,0 +1,103 @@
+.containerajuda {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #cafdf0;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: x-large;
+}
+
+
+.h1ajuda {
+  text-align: center;
+
+}
+
+.sessaoajuda {
+  margin-bottom: 20px;
+}
+
+.pergunta {
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.resposta {
+  margin-left: 20px;
+  font-size: x-large;
+}
+
+
+
+.containersuporte {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #cafdf0;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: x-large;
+}
+
+.psuporte {
+  line-height: 1.6;
+  font-size: x-large;
+}
+
+
+.containersobreosite {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #cafdf0;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: x-large;
+}
+
+.psobreosite {
+  font-size: x-large;
+}
+
+.lisobreosite {
+  font-size: x-large;
+}
+
+.h1sobreosite {
+  text-align: center;
+}
+
+.imgsobreosite {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 5px;
+  margin: auto;
+}
+
+
+.pioneiros {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.pioneiro {
+  margin: 10px;
+  text-align: center;
+}
+
+.pioneiro img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 4px solid #198754;
+
+}
+
+.pioneiro p {
+  font-size: larger;
+  margin-top: 5px;
+}
+

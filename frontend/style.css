@@ -1,0 +1,680 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  background-image: url(teladefundo.webp);
+  background-repeat: no-repeat;
+  background-size: 1920px;
+}
+
+
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+}
+
+.content {
+  background-color: #fff;
+  border-radius: 5px;
+  width: 920px;
+  height: 50%;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.content::before {
+  content: "";
+  position: absolute;
+  background-color: #03b087;
+  width: 40%;
+  height: 100%;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+
+
+  left: 0;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.title-primary {
+  color: #fff;
+}
+
+.title-second {
+  color: #03b087;
+}
+
+.description {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+.description-primary {
+  color: #fff;
+}
+
+.description-second {
+  color: #7f8c8d;
+}
+
+.btn {
+  border-radius: 15px;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 12px;
+  padding: 10px 50px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 150px;
+  align-self: center;
+  border: none;
+  margin-top: 1rem;
+}
+
+.btn-primary {
+  background-color: transparent;
+  border: 1px solid #fff;
+  transition: background-color .5s;
+  width: 180px;
+}
+
+.btn-primary:hover {
+  background-color: #fff;
+  color: #03b087;
+}
+
+.btn-second {
+  background-color: #03b087;
+  border: 1px solid #03b087;
+  transition: background-color .5s;
+  width: 180px;
+}
+
+.btn-second:hover {
+  background-color: #fff;
+  border: 1px solid #03b087;
+  color: #03b087;
+}
+
+.first-content {
+  display: flex;
+}
+
+.first-content .second-column {
+  z-index: 11;
+}
+
+.first-column {
+  text-align: center;
+  width: 40%;
+  z-index: 10;
+}
+
+.second-column {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-media {
+  margin: 1rem 0;
+}
+
+.link-social-media:not(:first-child) {
+  margin-left: 10px;
+}
+
+.link-social-media .item-social-media {
+  transition: background-color .5s;
+}
+
+.link-social-media:hover .item-social-media {
+  background-color: #03b087;
+  color: #fff;
+  border-color: #03b087;
+}
+
+.list-social-media {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+}
+
+.item-social-media {
+  border: 1px solid #bdc3c7;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  color: #95a5a6;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.form input {
+  height: 35px;
+  width: 100%;
+  border: none;
+  background-color: #ecf0f1;
+  border-radius: 10px;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #ecf0f1 inset !important;
+  -webkit-text-fill-color: #000 !important;
+}
+
+.label-input {
+  background-color: #ecf0f1;
+  display: flex;
+  align-items: center;
+  margin: 8px;
+}
+
+.icon-modify {
+  color: #7f8c8d;
+  padding: 0 5px;
+}
+
+.bx bx-clinic {
+  color: #7f8c8d;
+  padding: 0 5px;
+}
+
+
+
+.second-content {
+  position: absolute;
+  display: flex;
+}
+
+.second-content .first-column {
+  order: 2;
+  z-index: -1;
+}
+
+.second-content .second-column {
+  order: 1;
+  z-index: -1;
+}
+
+.password {
+  color: #34495e;
+  font-size: 14px;
+  margin: 15px 0;
+  text-align: center;
+}
+
+.password::first-letter {
+  text-transform: capitalize;
+}
+
+
+
+.sign-in-js .first-content .first-column {
+  z-index: -1;
+}
+
+.sign-in-js .second-content .second-column {
+  z-index: 11;
+}
+
+.sign-in-js .second-content .first-column {
+  z-index: 13;
+}
+
+.sign-in-js .content::before {
+  left: 60%;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  animation: slidein 1.3s;
+
+  z-index: 12;
+}
+
+.sign-up-js .content::before {
+  animation: slideout 1.3s;
+
+  z-index: 12;
+}
+
+.sign-up-js .second-content .first-column,
+.sign-up-js .second-content .second-column {
+  z-index: -1;
+}
+
+.sign-up-js .first-content .second-column {
+  z-index: 11;
+}
+
+.sign-up-js .first-content .first-column {
+  z-index: 13;
+}
+
+
+
+.sign-in-js .first-content .second-column {
+
+  z-index: -1;
+  position: relative;
+  animation: deslocamentoEsq 1.3s;
+}
+
+.sign-up-js .second-content .second-column {
+  position: relative;
+  z-index: -1;
+  animation: deslocamentoDir 1.3s;
+}
+
+
+
+@keyframes deslocamentoEsq {
+
+  from {
+    left: 0;
+    opacity: 1;
+    z-index: 12;
+  }
+
+  25% {
+    left: -80px;
+    opacity: .5;
+
+  }
+
+  50% {
+    left: -100px;
+    opacity: .2;
+
+  }
+
+  to {
+    left: -110px;
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+
+@keyframes deslocamentoDir {
+
+  from {
+    left: 0;
+    z-index: 12;
+  }
+
+  25% {
+    left: 80px;
+
+  }
+
+  50% {
+    left: 100px;
+
+
+  }
+
+  to {
+    left: 110px;
+    z-index: -1;
+  }
+}
+
+
+
+
+@keyframes slidein {
+
+  from {
+    left: 0;
+    width: 40%;
+  }
+
+  25% {
+    left: 5%;
+    width: 50%;
+  }
+
+  50% {
+    left: 25%;
+    width: 60%;
+  }
+
+  75% {
+    left: 45%;
+    width: 50%;
+  }
+
+  to {
+    left: 60%;
+    width: 40%;
+  }
+}
+
+@keyframes slideout {
+
+  from {
+    left: 60%;
+    width: 40%;
+  }
+
+  25% {
+    left: 45%;
+    width: 50%;
+  }
+
+  50% {
+    left: 25%;
+    width: 60%;
+  }
+
+  75% {
+    left: 5%;
+    width: 50%;
+  }
+
+  to {
+    left: 0;
+    width: 40%;
+  }
+}
+
+
+@media screen and (max-width: 1040px) {
+  .content {
+    width: 100%;
+    height: 100%;
+  }
+
+  .content::before {
+    width: 100%;
+    height: 40%;
+    top: 0;
+    border-radius: 0;
+  }
+
+  .first-content,
+  .second-content {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .first-column,
+  .second-column {
+    width: 100%;
+  }
+
+  .sign-in-js .content::before {
+    top: 60%;
+    left: 0;
+    border-radius: 0;
+
+  }
+
+  .form {
+    width: 90%;
+  }
+
+
+
+  @keyframes deslocamentoEsq {
+
+    from {
+      top: 0;
+      opacity: 1;
+      z-index: 12;
+    }
+
+    25% {
+      top: -80px;
+      opacity: .5;
+
+    }
+
+    50% {
+      top: -100px;
+      opacity: .2;
+
+    }
+
+    to {
+      top: -110px;
+      opacity: 0;
+      z-index: -1;
+    }
+  }
+
+
+  @keyframes deslocamentoDir {
+
+    from {
+      top: 0;
+      z-index: 12;
+    }
+
+    25% {
+      top: 80px;
+
+    }
+
+    50% {
+      top: 100px;
+
+
+    }
+
+    to {
+      top: 110px;
+      z-index: -1;
+    }
+  }
+
+
+
+  @keyframes slidein {
+
+    from {
+      top: 0;
+      height: 40%;
+    }
+
+    25% {
+      top: 5%;
+      height: 50%;
+    }
+
+    50% {
+      top: 25%;
+      height: 60%;
+    }
+
+    75% {
+      top: 45%;
+      height: 50%;
+    }
+
+    to {
+      top: 60%;
+      height: 40%;
+    }
+  }
+
+  @keyframes slideout {
+
+    from {
+      top: 60%;
+      height: 40%;
+    }
+
+    25% {
+      top: 45%;
+      height: 50%;
+    }
+
+    50% {
+      top: 25%;
+      height: 60%;
+    }
+
+    75% {
+      top: 5%;
+      height: 50%;
+    }
+
+    to {
+      top: 0;
+      height: 40%;
+    }
+  }
+
+}
+
+@media screen and (max-width: 740px) {
+  .form {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .form {
+    width: 100%;
+  }
+}
+
+/* Adicione essas linhas ao seu CSS existente */
+
+.data-table {
+width: 100%;
+margin: 20px 0;
+border-collapse: collapse;
+}
+
+.data-table th,
+.data-table td {
+border: 1px solid #ddd;
+padding: 8px;
+}
+
+.data-table th {
+background-color: #03b087;
+color: white;
+text-align: center;
+}
+
+.data-table td {
+text-align: center;
+}
+
+.data-table button {
+cursor: pointer;
+padding: 5px 10px;
+border: none;
+border-radius: 5px;
+margin: 0 5px;
+}
+
+.data-table .edit-btn {
+background-color: #f39c12;
+color: white;
+}
+
+.data-table .delete-btn {
+background-color: #e74c3c;
+color: white;
+}
+
+.tooltip-inner {
+max-width: 300px;
+padding: .25rem .5rem;
+color: #fff;
+text-align: center;
+background-color: #dc3545;
+border-radius: .25rem;
+}
+
+
+
+
+
+
+
+
+/style da pagina suporte ao cliente/
+.containersuporte {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #cafdf0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    font-size: x-large;
+}
+.psuporte {
+    line-height: 1.6;
+    font-size: x-large;
+}
+
+.containerform {
+    text-align: center;
+    background: #45a049;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #45a049;
+}
+.containerform h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+.containerform p {
+    margin-bottom: 30px;
+    font-size: 1.2em;
+}
+.btnform {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1em;
+    color: #000000;
+    background-color: #b3fce9;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.btnform:hover {
+    background-color: #cafdf0;
+}
+.btnconfirma{
+    background-color: #cafdf0;
+    font-size: x-large;
+}
+.myModal p{
+    font-size: x-large;
+}
+
+

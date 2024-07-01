@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard - Site de Remédios</title>
+  <link rel="stylesheet" href="style3.css">
+</head>
+
+<body>
+  <div class="dashboard-container">
+    <h2>Bem-vindo, Usuário!</h2>
+    <h3>Seus Lembretes de Medicação</h3>
+    <div id="medication-list"></div>
+    <button id="add-medication-button">Adicionar Lembrete de Medicação</button>
+    <div id="confirmation-message" class="confirmation-message"></div>
+  </div>
+
+  <!-- Modal de Adição de Medicação -->
+  <div id="medication-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <h2>Adicionar Lembrete de Medicação</h2>
+      <form id="medication-form">
+        <label for="medication-name">Nome do Remédio:</label>
+        <input type="text" id="medication-name" name="medication-name" required>
+        <label for="dosage">Dosagem:</label>
+        <input type="text" id="dosage" name="dosage" required>
+        <label for="time">Horário:</label>
+        <input type="time" id="time" name="time" required>
+        <button type="submit">Adicionar</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="dashboard.js"></script>
+</body>
+
+</html>
